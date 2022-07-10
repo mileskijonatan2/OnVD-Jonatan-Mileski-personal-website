@@ -1,0 +1,49 @@
+<!--created by Jonatan Mileski, No. index: 211512-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My personal website">
+    <meta name="keywords" content="Jonatan, Mileski, personal, website, about">
+    <meta name="author" content="Jonatan Mileski">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <h2 style="user-select: none; text-transform: uppercase">Jonatan</h2>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a class="selected" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+<div class="main">
+    <div class="main-content-about">
+        <h2 style="text-align: center">Contact</h2>
+        <p style="text-indent: 0; text-align: center">Got any questions? If so, do not hesitate to reach me out using the form below: </p>
+        <form>
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="secondname" placeholder="Second Name">
+            <input type="email" name="emailad" placeholder="Your E-mail">
+            <textarea name="comment"></textarea>
+            <button onclick="showMsg()">Submit</button>
+        </form>
+    </div>
+    <div class="social-media">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jonatan-mileski-1878a421a/?originalSubdomain=mk"><img alt="no imageg found" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARBJREFUSEvtl+0RwUAQhp90QAc6QAWoQAmoQAnoQAeohA7oAB3ogHlncmbnZmQS1iVm7J8kl7t7su9+zCWjJstq4tIocAvoOitxBS52z9jjDnB2hobt2sAtPMTgIbD/EngEHBoPngFbQCHQdfCBGqU9VkIIGGwKbFKAxbAJsQbmqcBKBkncA+SxSu1dKy31u4BX6yqBNdnGeALschU0HpSQGqd8ovJCYRlHX1AJbOt8CSyAFaB7mSBqCs/GYGAKk60CV3DgKPYxPK4Cd3DIdoH7pifHXdAdfDfy2jBo2L5zBSu5jnWAYzmTefwH/77Unv26UjklA9d22JOH6rtqDJ6mo23h8dYTVrhXo/4kknj9AOO5bx9DceH0AAAAAElFTkSuQmCC"/></a></li>
+            <li><a href="https://www.instagram.com/jonatanmileski/"><img alt="no imageg found" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAeNJREFUSEvlltsxREEQhr+NABEgAkSACBAAhQTIABEgApcEEAGePaDKOxkgAurbmtk6puacnbNnq5bSL3uZy9/999/d02NC1psQLr8eeBpYKGTnGfgYtrcpYsEOgHVgbthFyfobcA0c1TlRB7wCnFUAP4GnQvBFYCrs1YGN3NkcsJE+BtAbYB/wgjYm+AmwHM4upZHngD2wBwgqzW1tE/qivQTuAvhpCGBwVw7Y6GaB+REiFVRAbSecvw2f3lcLLM3vgMqUrpz5/1pl3dzLjp9bwEU4tBt08hV+z1TpTiNWVHp4D/g9tcOg9JxDrqni7UD1C/AQHLIUVwP1/bNtgCOoClcH5k/TQQWokgV2X9VinkcCll6VLqg1nTYIU6Q2BE+10Qk4RpuLKEYXqyHd0wnYLqSgftCVUGrpXWXK8G8CT4zqKC5FpXhy4noFFNlYxWU6Y9SCVsvJ3Fq7go69nKKOmhpIneLtaEMbSGyZbnai5Mw6NsLYUt173tDXi1qmQF2GROpobME2HoMaWNNYtHYd4l2s1VjUM+lzNHowjrc2DpiG49DHs2226elj3gTXVHKbp0+kVVBVHwdKI9Vx0cOqWCHFN1Rp1AKaKqdW9sVZ+q5WyaUvzSJ2SoFLIy3e9/+AvwFbBJcf5iwWnQAAAABJRU5ErkJggg=="/></a></li>
+            <li><a href="https://www.facebook.com/jonatan.mileski/"><img alt="no imageg found" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQdJREFUSEvtl2ENwjAQhb85AAXgABwACpAADsABOMACEnAAOAAFgANwQC5pyXHJmiy7saWhv9Ysu5f37r32VtDSKlrCpVPAPWDkrMQDuOualvEQuDmDxnJ94Bk3FngKHBsCngGnbIBfwBa4KLXGwE7t3RlfAWnRp38BzLbNHfiroGLYOLA2qMi7AiQdEkvZx+XK+BxkjsUPwLwkFY0CS1wm2QGLi9eBlTjZRkh6K2sJLDx7bPtadtBJrjdtAFuj1TaX3DL7wERunfgc5R0oqSVWP4lTnq7WZrJG+zPW6tR2dV5SVx32qpgrOeyJjPYeTc1+qbNafyeHTnK8TYG4vuvUn4Qrs7Jib47OXR/1HJySAAAAAElFTkSuQmCC"/></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

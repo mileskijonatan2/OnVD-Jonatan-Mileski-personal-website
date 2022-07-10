@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Rubik:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*min-height: 100vh;
+    min-width: 100vw;*/
+}
+
+header{
+    margin: 0;
+    padding: 0 90px;  /* media query */
+    color: dimgray;
+    background-color: white;
+    line-height: 40px;
+    border-bottom: 1px solid dodgerblue;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 3px rgba(0, 0, 0,.1);
+    transition: .3s;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul a{
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bolder;
+}
+
+header ul a::after{
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background-color: dodgerblue;
+    display: block;
+    border-radius: 50%;
+}
+
+header ul a:hover, .skills-tab h3:hover{
+    text-shadow: 1px 1px 1px rgba(2, 1, 1, .1);
+}
+
+header ul a:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+.selected{
+    color: dodgerblue;
+}
+
+.selected a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+header ul li{
+    padding-left: 30px; /* media query */
+}
+
+/*main div*/
+.main{
+   /* min-height: calc(100vh - 79px);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    padding: 70px 90px 0 90px;
+    text-align: center;
+}
+
+.main-content h1:nth-child(1){
+    transition: .3s;
+    font-size: 42px;
+}
+
+#bubbles-left{
+    position: absolute;
+    margin-top: 20vh;
+    z-index: -1;
+    width: 200px;
+    left: 0;
+
+}
+
+#bubbles-right{
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: -1;
+    margin-top: 10vh;
+}
+
+.social-media{
+    padding-top: 20px;
+}
+
+.social-media ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li{
+    display: inline;
+}
+
+.social-media img:hover{
+    transform: scale(1.05);
+}
+
+.animated-s{
+    transition: .3s;
+}
+
+#animated{
+    transition: opacity 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+}
+
+#animated.fade{
+    opacity: 0;
+}
+
+.main-content-about{
+    padding: 0 25% 0 25%;
+    width: 100%;
+}
+
+.main-content-about h2{
+    margin: 40px 0 40px 0;
+}
+
+.main-content-about p{
+    text-align: justify;
+}
+
+#first-p{
+    text-indent: 2em;
+}
+
+#cv-photo{
+    width: 20%;
+    box-shadow: 5px 5px 5px rgba(1,1,1,.2);
+    float: left;
+    margin: 0 20px 20px 0;
+    user-select: none;
+    user-focus: none;
+}
+
+#cv-photo:hover{
+    top: 0;
+    left: 0;
+    width: 25%;
+}
+
+.main-content-about ul{
+    width: 100%;
+}
+
+.education-list{
+    list-style-image: url("graduation.png");
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.education-list h3{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+.education-list li{
+    padding: 10px;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+.sublist{
+    list-style-image: none;
+    list-style-type: square;
+}
+
+.sublist li{
+    margin-top: 0;
+}
+
+.info{
+    font-style: italic;
+    color: dodgerblue;
+    font-weight: bolder;
+}
+
+.skills-tab{
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.skills-tab h3{
+    margin: 0;
+}
+
+.skills-tab span{
+    float: right;
+}
+
+.section-sk{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.section-sk td{
+    margin: 0;
+    padding: 10px 20px;
+    width: 50%;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.section-sk tr{
+    width: 100%;
+}
+
+.section-sk td:first-of-type{
+    font-weight: bolder;
+}
+
+.section-sk tr:nth-of-type(2n){
+    background-color: lightgray;
+}
+
+.main-content-about h3+p{
+    margin-left: 40px;
+}
+
+.hb{
+
+}
+
+.hb > li::marker {
+    font-weight: bold;
+}
+
+form{
+    text-align: center;
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+
+input, textarea, button{
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: 1px solid dodgerblue;
+    margin-bottom: 8px;
+}
+
+button:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+
+button{
+    color: white;
+    background-color: dodgerblue;
+}
+
+
+
+
+
